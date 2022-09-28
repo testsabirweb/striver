@@ -23,3 +23,12 @@ func Make2D[T any](n, m int) [][]T {
 	}
 	return matrix
 }
+
+func ReverseArray(a *[]int, start int, end int) {
+	for start < end {
+		(*a)[start], (*a)[end] = (*a)[end], (*a)[start]
+		start++
+		end--
+	}
+}
+
