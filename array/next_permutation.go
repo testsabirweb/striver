@@ -2,7 +2,8 @@ package array
 
 import (
 	"fmt"
-	"test/workspace/src/github.com/testsabirweb/striver/utils"
+
+	"github.com/testsabirweb/striver/utils"
 )
 
 func NextPermutation() {
