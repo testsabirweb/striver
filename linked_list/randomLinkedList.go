@@ -26,34 +26,33 @@ func RandomLinkedList() {
 			arr[i].random = &arr[j]
 		}
 	}
-	head := arr[0]
+	head := &arr[0]
 	arr = nil
 	input = nil
 	temp := head
 	for {
-		fmt.Println(temp.key)
+		// fmt.Println(temp.key)
 		if temp.next == nil {
 			break
 		}
-		temp = *temp.next
+		temp = temp.next
 	}
-	fmt.Printf("%#v\n", arr)
-	fmt.Printf("%#v\n", input)
+	// fmt.Printf("%#v\n", arr)
+	// fmt.Printf("%#v\n", input)
 
-	fmt.Println(len(arr), cap(arr))
-	fmt.Println(len(input), cap(input))
+	// fmt.Println(len(arr), cap(arr))
+	// fmt.Println(len(input), cap(input))
 
 	temp = head
 	for {
-		if temp.next == nil {
-			break
-		}
 		node := RandomNode{}
 		node.next = temp.next
 		node.key = temp.key
 		temp.next = &node
-		fmt.Println("#####", temp.key, temp.next.key)
-		temp = *node.next
+		if node.next == nil {
+			break
+		}
+		temp = node.next
 	}
 	temp = head
 	for {
@@ -61,7 +60,7 @@ func RandomLinkedList() {
 		if temp.next == nil {
 			break
 		}
-		temp = *temp.next
+		temp = temp.next
 	}
 
 	// for {
