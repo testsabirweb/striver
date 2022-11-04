@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	linkedlist "github.com/testsabirweb/striver/linked_list"
+	"github.com/testsabirweb/striver/binary"
 )
 
 func main() {
@@ -16,5 +16,7 @@ func main() {
 	// array.MajorityNBy2()
 	// arr := []int{3, 5, 7, 2, 1, 9, 4, 8, 4, 6}
 	// fmt.Println(algo.MergeSort(arr))
-	linkedlist.RandomLinkedList()
+	// linkedlist.RandomLinkedList()
+	binary.AggresiveCows()
+
 }
