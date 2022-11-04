@@ -14,18 +14,14 @@ func max(a, b int) int {
 }
 
 func AggresiveCows() {
-	arr := []int{1, 2, 8, 4, 9}
+	arr := []int{1, 2, 4, 8, 9}
 	cows := 3
 	result := 0
 	sort.Ints(arr)
 	low := arr[0]
 	high := arr[len(arr)-1] - low
 
-	for low < high {
-
-		if low == high-1 {
-			break
-		}
+	for low <= high {
 
 		mid := (low + high) / 2
 		fmt.Println(low, mid, high)
@@ -39,9 +35,9 @@ func AggresiveCows() {
 		}
 		if count >= cows {
 			result = max(result, mid)
-			low = mid
+			low = mid + 1
 		} else {
-			high = mid
+			high = mid - 1
 		}
 	}
 	fmt.Println(result)
