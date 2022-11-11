@@ -31,17 +31,17 @@ func RandomLinkedList() {
 	input = nil
 	temp := head
 	for {
-		fmt.Println(temp.key)
+		// fmt.Println(temp.key)
 		if temp.next == nil {
 			break
 		}
 		temp = temp.next
 	}
-	fmt.Printf("%#v\n", arr)
-	fmt.Printf("%#v\n", input)
+	// fmt.Printf("%#v\n", arr)
+	// fmt.Printf("%#v\n", input)
 
-	fmt.Println(len(arr), cap(arr))
-	fmt.Println(len(input), cap(input))
+	// fmt.Println(len(arr), cap(arr))
+	// fmt.Println(len(input), cap(input))
 
 	temp = head
 	for {
@@ -56,6 +56,9 @@ func RandomLinkedList() {
 		node.key = temp.key
 		// fmt.Println("before", temp, node)
 		temp.next = &node
+		if node.next == nil {
+			break
+		}
 		// fmt.Println("after", temp, node)
 		temp = node.next
 	}
