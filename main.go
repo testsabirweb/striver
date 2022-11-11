@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/testsabirweb/striver/heap"
+	stackandqueue "github.com/testsabirweb/striver/stack_and_queue"
 )
 
 func main() {
@@ -21,6 +21,7 @@ func main() {
 	// recursion.CombinationSum1()
 
 	// binarysearch.KthElementIn2Sorted()
-	heap.Heap()
+	// heap.Heap()
+	stackandqueue.QueueUsingStack()
 
 }
