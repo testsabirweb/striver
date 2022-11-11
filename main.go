@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/testsabirweb/striver/algo"
+	"github.com/testsabirweb/striver/heap"
 )
 
 func main() {
@@ -14,6 +14,13 @@ func main() {
 	// array.MergeOverlapping()
 
 	// array.MajorityNBy2()
-	arr := []int{3, 5, 7, 2, 1, 9, 4, 8, 4, 6}
-	fmt.Println(algo.MergeSort(arr))
+	// arr := []int{3, 5, 7, 2, 1, 9, 4, 8, 4, 6}
+	// fmt.Println(algo.MergeSort(arr))
+	// greedy.Jobsequencing()
+	// recursion.Subset1()
+	// recursion.CombinationSum1()
+
+	// binarysearch.KthElementIn2Sorted()
+	heap.Heap()
+
 }
