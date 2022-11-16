@@ -27,6 +27,14 @@ func (s *Stack) pop() int {
 	return element
 }
 
+func (s *Stack) peek() int {
+	if s.isEmpty() {
+		fmt.Println("Stack is Empty")
+		return -1
+	}
+	return s.element[s.len-1]
+}
+
 func (s *Stack) isEmpty() bool {
 	if s.len <= 0 {
 		return true
@@ -35,7 +43,7 @@ func (s *Stack) isEmpty() bool {
 }
 
 func (s *Stack) isFull() bool {
-	if s.len >= 6 {
+	if s.len >= 15 {
 		return true
 	}
 	return false
@@ -66,11 +74,11 @@ func (q *Queue) dequeue() int {
 func QueueUsingStack() {
 
 	input := Stack{
-		element: []int{0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
+		element: []int{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
 		len:     0,
 	}
 	output := Stack{
-		element: []int{0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
+		element: []int{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
 		len:     0,
 	}
 
