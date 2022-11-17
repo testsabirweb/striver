@@ -23,6 +23,7 @@ func main() {
 	// binarysearch.KthElementIn2Sorted()
 	// heap.Heap()
 	// stackandqueue.QueueUsingStack()
-	stackandqueue.NextGreaterElement()
+	// stackandqueue.NextGreaterElement()
+	stackandqueue.LRUCache()
 
 }
