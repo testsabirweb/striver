@@ -24,6 +24,8 @@ func main() {
 	// heap.Heap()
 	// stackandqueue.QueueUsingStack()
 	// stackandqueue.NextGreaterElement()
-	stackandqueue.LRUCache()
+	// stackandqueue.LRUCache()
+	var arr = []int{5, 7, 1, 7, 6, 0}
+	stackandqueue.LargestRect(arr)
 
 }
